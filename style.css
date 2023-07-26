@@ -3,6 +3,7 @@ body {
     background-color: #323232; /* Hintergrundfarbe der gesamten Seite */
     font-family: "Open Sans", sans-serif; /* Schriftart: Open Sans */
     color: white;
+    margin: 0px;
 }
 
 table {
@@ -17,6 +18,9 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
 }
 
 td {
@@ -26,6 +30,11 @@ td {
     vertical-align: middle;
     font-size: 48px;
     border: 5px solid white; /* Weiße border-color */
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
 /* Trennlinien nur innerhalb der Tabelle (nicht außerhalb) */
